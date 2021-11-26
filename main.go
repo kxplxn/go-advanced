@@ -7,4 +7,5 @@ import (
 func main() {
 	packagesDeepDive.Demos.NestedPackages()
 	packagesDeepDive.Demos.ConfiguringPackages()
+	packagesDeepDive.Demos.ImportingPackages()
 }
