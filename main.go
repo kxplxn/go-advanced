@@ -8,4 +8,5 @@ func main() {
 	packagesDeepDive.Demos.NestedPackages()
 	packagesDeepDive.Demos.ConfiguringPackages()
 	packagesDeepDive.Demos.ImportingPackages()
+	packagesDeepDive.Demos.AlternateImportMethods()
 }
