@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	packagesDeepDive.NestedPackages()
+	packagesDeepDive.Demos.NestedPackages()
+	packagesDeepDive.Demos.ConfiguringPackages()
 }
