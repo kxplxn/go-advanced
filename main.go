@@ -10,4 +10,5 @@ func main() {
 	packagesDeepDive.Demos.ImportingPackages()
 	packagesDeepDive.Demos.AlternateImportMethods()
 	packagesDeepDive.Demos.DocumentingPackages()
+	packagesDeepDive.Demos.TheInitFunction()
 }

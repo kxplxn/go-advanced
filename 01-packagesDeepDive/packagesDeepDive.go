@@ -6,6 +6,7 @@ import (
 	importingPackages "go-advanced/01-packagesDeepDive/03-importingPackages"
 	alternateImportMethods "go-advanced/01-packagesDeepDive/04-alternateImportMethods"
 	documentingPackages "go-advanced/01-packagesDeepDive/05-documentingPackages"
+	theInitFunction "go-advanced/01-packagesDeepDive/06-theInitFunction"
 )
 
 var Demos = struct {
@@ -14,10 +15,12 @@ var Demos = struct {
 	ImportingPackages      func()
 	AlternateImportMethods func()
 	DocumentingPackages    func()
+	TheInitFunction        func()
 }{
 	NestedPackages:         nestedPackages.Demo,
 	ConfiguringPackages:    configuringPackages.Demo,
 	ImportingPackages:      importingPackages.Demo,
 	AlternateImportMethods: alternateImportMethods.Demo,
 	DocumentingPackages:    documentingPackages.Demo,
+	TheInitFunction:        theInitFunction.Demo,
 }
