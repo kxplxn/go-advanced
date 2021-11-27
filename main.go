@@ -9,4 +9,5 @@ func main() {
 	packagesDeepDive.Demos.ConfiguringPackages()
 	packagesDeepDive.Demos.ImportingPackages()
 	packagesDeepDive.Demos.AlternateImportMethods()
+	packagesDeepDive.Demos.DocumentingPackages()
 }
