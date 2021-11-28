@@ -2,7 +2,8 @@ package main
 
 import (
 	packagesDeepDive "go-advanced/01-packagesDeepDive"
-	concurrency "go-advanced/02-concurrency"
+	//concurrency "go-advanced/02-concurrency"
+	goroutines "go-advanced/03-goroutines"
 )
 
 func main() {
@@ -14,5 +15,7 @@ func main() {
 	packagesDeepDive.Demos.TheInitFunction()
 	packagesDeepDive.Demos.Modules()
 
-	concurrency.Demos.ImprovingPerformance()
+	//concurrency.Demos.ImprovingPerformance()
+
+	goroutines.Demos.Goroutines()
 }

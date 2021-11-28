@@ -12,7 +12,7 @@ import (
 // Running a billion "add"s sequentially vs concurrently.
 
 func Demo() {
-	fmt.Println("\n0202001 Concurrency: Improving Performance")
+	fmt.Println("\n020201 Concurrency: Improving Performance")
 	vals := gen(1e9)
 
 	var sum int64
