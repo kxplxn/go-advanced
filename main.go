@@ -18,4 +18,5 @@ func main() {
 	//concurrency.Demos.ImprovingPerformance()
 
 	goroutines.Demos.Goroutines()
+	goroutines.Demos.AnonymousFunctions()
 }
