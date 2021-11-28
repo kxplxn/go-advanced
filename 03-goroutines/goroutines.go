@@ -6,18 +6,21 @@ import (
 	assigningFunctions "go-advanced/03-goroutines/02-closures/02-assigningFunctions"
 	returningFunctions "go-advanced/03-goroutines/02-closures/03-returningFunctions"
 	closures "go-advanced/03-goroutines/02-closures/04-closures"
+	goroutinesAsClosures "go-advanced/03-goroutines/03-goroutinesAsClosures"
 )
 
 var Demos = struct {
-	Goroutines         func()
-	AnonymousFunctions func()
-	AssigningFunctions func()
-	ReturningFunctions func()
-	Closures           func()
+	Goroutines          func()
+	AnonymousFunctions  func()
+	AssigningFunctions  func()
+	ReturningFunctions  func()
+	Closures            func()
+	AnonymousGoroutines func()
 }{
-	Goroutines:         goroutines.Demo,
-	AnonymousFunctions: anonymousFunctions.Demo,
-	AssigningFunctions: assigningFunctions.Demo,
-	ReturningFunctions: returningFunctions.Demo,
-	Closures:           closures.Demo,
+	Goroutines:          goroutines.Demo,
+	AnonymousFunctions:  anonymousFunctions.Demo,
+	AssigningFunctions:  assigningFunctions.Demo,
+	ReturningFunctions:  returningFunctions.Demo,
+	Closures:            closures.Demo,
+	AnonymousGoroutines: goroutinesAsClosures.Demo,
 }
