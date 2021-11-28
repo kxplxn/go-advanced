@@ -21,4 +21,5 @@ func main() {
 	goroutines.Demos.AnonymousFunctions()
 	goroutines.Demos.AssigningFunctions()
 	goroutines.Demos.ReturningFunctions()
+	goroutines.Demos.Closures()
 }
