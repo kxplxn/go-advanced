@@ -6,8 +6,7 @@ import (
 )
 
 func Demo() {
-	defer fmt.Println("baban")
-	fmt.Println("\n02030203 Goroutines: Closures — Function Variables")
+	fmt.Println("\n02030203 Goroutines: Closures — Assigning Functions")
 	anon := func(msg string) bool {
 		fmt.Println(msg)
 		return true
