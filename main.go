@@ -19,4 +19,5 @@ func main() {
 
 	goroutines.Demos.Goroutines()
 	goroutines.Demos.AnonymousFunctions()
+	goroutines.Demos.AssigningFunctions()
 }
