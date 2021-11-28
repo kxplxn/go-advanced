@@ -2,6 +2,7 @@ package main
 
 import (
 	packagesDeepDive "go-advanced/01-packagesDeepDive"
+	concurrency "go-advanced/02-concurrency"
 )
 
 func main() {
@@ -12,4 +13,6 @@ func main() {
 	packagesDeepDive.Demos.DocumentingPackages()
 	packagesDeepDive.Demos.TheInitFunction()
 	packagesDeepDive.Demos.Modules()
+
+	concurrency.Demos.ImprovingPerformance()
 }
