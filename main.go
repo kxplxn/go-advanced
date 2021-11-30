@@ -26,4 +26,5 @@ func main() {
 	goroutines.Demos.WaitGroups()
 	goroutines.Demos.AtomicOperations()
 	goroutines.Demos.Mutexes()
+	goroutines.Demos.RaceConditions()
 }

@@ -10,6 +10,7 @@ import (
 	waitGroups "go-advanced/03-goroutines/04-waitGroups"
 	atomicOperations "go-advanced/03-goroutines/05-atomicOperations"
 	mutexes "go-advanced/03-goroutines/06-mutexes"
+	raceConditions "go-advanced/03-goroutines/07-raceConditions"
 )
 
 var Demos = struct {
@@ -22,6 +23,7 @@ var Demos = struct {
 	WaitGroups          func()
 	AtomicOperations    func()
 	Mutexes             func()
+	RaceConditions      func()
 }{
 	Goroutines:          goroutines.Demo,
 	AnonymousFunctions:  anonymousFunctions.Demo,
@@ -32,4 +34,5 @@ var Demos = struct {
 	WaitGroups:          waitGroups.Demo,
 	AtomicOperations:    atomicOperations.Demo,
 	Mutexes:             mutexes.Demo,
+	RaceConditions:      raceConditions.Demo,
 }
