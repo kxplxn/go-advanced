@@ -23,4 +23,5 @@ func main() {
 	goroutines.Demos.ReturningFunctions()
 	goroutines.Demos.Closures()
 	goroutines.Demos.AnonymousGoroutines()
+	goroutines.Demos.WaitGroups()
 }

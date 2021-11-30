@@ -6,7 +6,7 @@ import (
 )
 
 func Demo() {
-	fmt.Println("\n020302 Goroutines: Goroutines As Closures")
+	fmt.Println("\n020303 Goroutines: Goroutines As Closures")
 
 	fmt.Println("running goroutine in a for loop WITHOUT parameters")
 	for i := 0; i < 5; i++ {

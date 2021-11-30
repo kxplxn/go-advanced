@@ -7,6 +7,7 @@ import (
 	returningFunctions "go-advanced/03-goroutines/02-closures/03-returningFunctions"
 	closures "go-advanced/03-goroutines/02-closures/04-closures"
 	goroutinesAsClosures "go-advanced/03-goroutines/03-goroutinesAsClosures"
+	waitGroups "go-advanced/03-goroutines/04-waitGroups"
 )
 
 var Demos = struct {
@@ -16,6 +17,7 @@ var Demos = struct {
 	ReturningFunctions  func()
 	Closures            func()
 	AnonymousGoroutines func()
+	WaitGroups          func()
 }{
 	Goroutines:          goroutines.Demo,
 	AnonymousFunctions:  anonymousFunctions.Demo,
@@ -23,4 +25,5 @@ var Demos = struct {
 	ReturningFunctions:  returningFunctions.Demo,
 	Closures:            closures.Demo,
 	AnonymousGoroutines: goroutinesAsClosures.Demo,
+	WaitGroups:          waitGroups.Demo,
 }
