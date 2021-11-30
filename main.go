@@ -25,4 +25,5 @@ func main() {
 	goroutines.Demos.AnonymousGoroutines()
 	goroutines.Demos.WaitGroups()
 	goroutines.Demos.AtomicOperations()
+	goroutines.Demos.Mutexes()
 }

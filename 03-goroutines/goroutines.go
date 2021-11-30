@@ -9,6 +9,7 @@ import (
 	goroutinesAsClosures "go-advanced/03-goroutines/03-goroutinesAsClosures"
 	waitGroups "go-advanced/03-goroutines/04-waitGroups"
 	atomicOperations "go-advanced/03-goroutines/05-atomicOperations"
+	mutexes "go-advanced/03-goroutines/06-mutexes"
 )
 
 var Demos = struct {
@@ -20,6 +21,7 @@ var Demos = struct {
 	AnonymousGoroutines func()
 	WaitGroups          func()
 	AtomicOperations    func()
+	Mutexes             func()
 }{
 	Goroutines:          goroutines.Demo,
 	AnonymousFunctions:  anonymousFunctions.Demo,
@@ -29,4 +31,5 @@ var Demos = struct {
 	AnonymousGoroutines: goroutinesAsClosures.Demo,
 	WaitGroups:          waitGroups.Demo,
 	AtomicOperations:    atomicOperations.Demo,
+	Mutexes:             mutexes.Demo,
 }
