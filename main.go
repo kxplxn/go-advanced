@@ -4,6 +4,7 @@ import (
 	packagesDeepDive "go-advanced/01-packagesDeepDive"
 	//concurrency "go-advanced/02-concurrency"
 	goroutines "go-advanced/03-goroutines"
+	channels "go-advanced/04-channels"
 )
 
 func main() {
@@ -15,7 +16,7 @@ func main() {
 	packagesDeepDive.Demos.TheInitFunction()
 	packagesDeepDive.Demos.Modules()
 
-	//concurrency.Demos.ImprovingPerformance()
+	// concurrency.Demos.ImprovingPerformance() // takes a long time
 
 	goroutines.Demos.Goroutines()
 	goroutines.Demos.AnonymousFunctions()
@@ -29,4 +30,6 @@ func main() {
 	goroutines.Demos.RaceConditions()
 	goroutines.Demos.PreventingDataRaces()
 	goroutines.Demos.UsingRaceDetector()
+
+	channels.Demos.GoroutinesAndChannels()
 }
