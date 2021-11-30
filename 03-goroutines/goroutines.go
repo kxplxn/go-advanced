@@ -11,6 +11,7 @@ import (
 	atomicOperations "go-advanced/03-goroutines/05-atomicOperations"
 	mutexes "go-advanced/03-goroutines/06-mutexes"
 	raceConditions "go-advanced/03-goroutines/07-raceConditions"
+	preventingDataRaces "go-advanced/03-goroutines/08-preventingDataRaces"
 )
 
 var Demos = struct {
@@ -24,6 +25,7 @@ var Demos = struct {
 	AtomicOperations    func()
 	Mutexes             func()
 	RaceConditions      func()
+	PreventingDataRaces func()
 }{
 	Goroutines:          goroutines.Demo,
 	AnonymousFunctions:  anonymousFunctions.Demo,
@@ -35,4 +37,5 @@ var Demos = struct {
 	AtomicOperations:    atomicOperations.Demo,
 	Mutexes:             mutexes.Demo,
 	RaceConditions:      raceConditions.Demo,
+	PreventingDataRaces: preventingDataRaces.Demo,
 }

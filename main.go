@@ -27,4 +27,5 @@ func main() {
 	goroutines.Demos.AtomicOperations()
 	goroutines.Demos.Mutexes()
 	goroutines.Demos.RaceConditions()
+	goroutines.Demos.PreventingDataRaces()
 }
