@@ -10,7 +10,6 @@ var env string
 
 func init() {
 	fmt.Println("Secret key from package main is fetched.")
-	print("BABAN")
 }
 
 func init() {

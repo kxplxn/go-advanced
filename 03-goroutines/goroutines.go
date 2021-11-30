@@ -12,6 +12,7 @@ import (
 	mutexes "go-advanced/03-goroutines/06-mutexes"
 	raceConditions "go-advanced/03-goroutines/07-raceConditions"
 	preventingDataRaces "go-advanced/03-goroutines/08-preventingDataRaces"
+	usingRaceDetector "go-advanced/03-goroutines/09-usingRaceDetector"
 )
 
 var Demos = struct {
@@ -26,6 +27,7 @@ var Demos = struct {
 	Mutexes             func()
 	RaceConditions      func()
 	PreventingDataRaces func()
+	UsingRaceDetector   func()
 }{
 	Goroutines:          goroutines.Demo,
 	AnonymousFunctions:  anonymousFunctions.Demo,
@@ -38,4 +40,5 @@ var Demos = struct {
 	Mutexes:             mutexes.Demo,
 	RaceConditions:      raceConditions.Demo,
 	PreventingDataRaces: preventingDataRaces.Demo,
+	UsingRaceDetector:   usingRaceDetector.Demo,
 }

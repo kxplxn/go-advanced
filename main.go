@@ -28,4 +28,5 @@ func main() {
 	goroutines.Demos.Mutexes()
 	goroutines.Demos.RaceConditions()
 	goroutines.Demos.PreventingDataRaces()
+	goroutines.Demos.UsingRaceDetector()
 }
