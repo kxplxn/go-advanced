@@ -34,4 +34,5 @@ func main() {
 	channels.Demos.GoroutinesAndChannels()
 	channels.Demos.UnbufferedChannels()
 	channels.Demos.BufferedChannels()
+	channels.Demos.RangeAndClose()
 }
