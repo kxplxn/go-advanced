@@ -32,4 +32,5 @@ func main() {
 	goroutines.Demos.UsingRaceDetector()
 
 	channels.Demos.GoroutinesAndChannels()
+	channels.Demos.UnbufferedChannels()
 }
