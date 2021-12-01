@@ -24,6 +24,7 @@ func Demo() {
 		defer wg.Done()
 		receive(ch)
 	}()
+
 	wg.Wait()
 }
 
@@ -39,7 +40,7 @@ func send(ch chan string) {
 
 func receive(ch chan string) {
 	fmt.Println("receiving...")
-	for i := 1; i <= 3; i++ {
+	for i := 0; i < 3; i++ {
 		fmt.Println("received:", <-ch)
 		fmt.Println("channel length:", len(ch))
 	}
