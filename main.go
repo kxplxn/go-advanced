@@ -35,4 +35,5 @@ func main() {
 	channels.Demos.UnbufferedChannels()
 	channels.Demos.BufferedChannels()
 	channels.Demos.RangeAndClose()
+	channels.Demos.SelectStatement()
 }

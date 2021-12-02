@@ -5,6 +5,7 @@ import (
 	unbufferedChannels "go-advanced/04-channels/02-bufferedAndUnbuffered/01-unbufferedChannels"
 	bufferedChannels "go-advanced/04-channels/02-bufferedAndUnbuffered/02-bufferedChannels"
 	rangeAndClose "go-advanced/04-channels/03-rangeAndClose"
+	selectStatement "go-advanced/04-channels/04-selectStatement"
 )
 
 var Demos = struct {
@@ -12,9 +13,11 @@ var Demos = struct {
 	UnbufferedChannels    func()
 	BufferedChannels      func()
 	RangeAndClose         func()
+	SelectStatement       func()
 }{
 	GoroutinesAndChannels: usingChannels.Demo,
 	UnbufferedChannels:    unbufferedChannels.Demo,
 	BufferedChannels:      bufferedChannels.Demo,
 	RangeAndClose:         rangeAndClose.Demo,
+	SelectStatement:       selectStatement.Demo,
 }
