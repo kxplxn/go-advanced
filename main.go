@@ -36,4 +36,5 @@ func main() {
 	channels.Demos.BufferedChannels()
 	channels.Demos.RangeAndClose()
 	channels.Demos.SelectStatement()
+	channels.Demos.NonblockingSelect()
 }
