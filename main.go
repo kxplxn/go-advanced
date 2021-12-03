@@ -37,4 +37,5 @@ func main() {
 	channels.Demos.RangeAndClose()
 	channels.Demos.SelectStatement()
 	channels.Demos.NonblockingSelect()
+	channels.Demos.ChannelsAndWaitGroups()
 }

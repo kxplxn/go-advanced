@@ -7,6 +7,7 @@ import (
 	rangeAndClose "go-advanced/04-channels/03-rangeAndClose"
 	selectStatement "go-advanced/04-channels/04-selectStatement"
 	nonblockingSelect "go-advanced/04-channels/05-nonblockingSelect"
+	channelsAndWaitGroups "go-advanced/04-channels/06-channelsAndWaitGroups"
 )
 
 var Demos = struct {
@@ -16,6 +17,7 @@ var Demos = struct {
 	RangeAndClose         func()
 	SelectStatement       func()
 	NonblockingSelect     func()
+	ChannelsAndWaitGroups func()
 }{
 	GoroutinesAndChannels: usingChannels.Demo,
 	UnbufferedChannels:    unbufferedChannels.Demo,
@@ -23,4 +25,5 @@ var Demos = struct {
 	RangeAndClose:         rangeAndClose.Demo,
 	SelectStatement:       selectStatement.Demo,
 	NonblockingSelect:     nonblockingSelect.Demo,
+	ChannelsAndWaitGroups: channelsAndWaitGroups.Demo,
 }
