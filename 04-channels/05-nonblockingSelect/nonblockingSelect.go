@@ -13,9 +13,9 @@ func Demo() {
 
 	go func() {
 		for i := 1; i <= 3; i++ {
-			time.Sleep(300 * time.Millisecond)
+			time.Sleep(3 * time.Millisecond)
 			ch1 <- i
-			time.Sleep(100 * time.Millisecond)
+			time.Sleep(1 * time.Millisecond)
 			ch2 <- i
 		}
 	}()
@@ -29,6 +29,6 @@ func Demo() {
 		default:
 			fmt.Println("no data received... performing some other operation...")
 		}
-		time.Sleep(200 * time.Millisecond)
+		time.Sleep(2 * time.Millisecond)
 	}
 }
