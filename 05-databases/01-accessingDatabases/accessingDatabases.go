@@ -8,13 +8,13 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 
-	db "go-advanced/05-databases/00-shared"
+	dbi "go-advanced/05-databases/00-shared"
 )
 
 func Demo() {
 	fmt.Println("\n020501 Databases: Accessing Databases")
 
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s", db.User, db.Password, db.Address, db.Dbname)
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s", dbi.User, dbi.Password, dbi.Address, dbi.Dbname)
 	fmt.Println("dsn:", dsn)
 
 	db, err := sql.Open("mysql", dsn)

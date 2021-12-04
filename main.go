@@ -42,4 +42,5 @@ func main() {
 	channels.Demos.Pipelines()
 
 	databases.Demos.AccessingDatabases()
+	databases.Demos.SingleRowDataRetrieval()
 }
