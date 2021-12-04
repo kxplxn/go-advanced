@@ -38,4 +38,5 @@ func main() {
 	channels.Demos.SelectStatement()
 	channels.Demos.NonblockingSelect()
 	channels.Demos.ChannelsAndWaitGroups()
+	channels.Demos.Pipelines()
 }

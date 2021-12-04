@@ -8,6 +8,7 @@ import (
 	selectStatement "go-advanced/04-channels/04-selectStatement"
 	nonblockingSelect "go-advanced/04-channels/05-nonblockingSelect"
 	channelsAndWaitGroups "go-advanced/04-channels/06-channelsAndWaitGroups"
+	pipelines "go-advanced/04-channels/07-pipelines"
 )
 
 var Demos = struct {
@@ -18,6 +19,7 @@ var Demos = struct {
 	SelectStatement       func()
 	NonblockingSelect     func()
 	ChannelsAndWaitGroups func()
+	Pipelines             func()
 }{
 	GoroutinesAndChannels: usingChannels.Demo,
 	UnbufferedChannels:    unbufferedChannels.Demo,
@@ -26,4 +28,5 @@ var Demos = struct {
 	SelectStatement:       selectStatement.Demo,
 	NonblockingSelect:     nonblockingSelect.Demo,
 	ChannelsAndWaitGroups: channelsAndWaitGroups.Demo,
+	Pipelines:             pipelines.Demo,
 }
