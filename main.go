@@ -46,4 +46,5 @@ func main() {
 	databases.Demos.MultipleRowsDataRetrieval()
 	databases.Demos.PreparedStatements()
 	databases.Demos.DataManipulation()
+	databases.Demos.HandlingErrors()
 }

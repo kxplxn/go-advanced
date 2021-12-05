@@ -6,6 +6,7 @@ import (
 	preparedStatements "go-advanced/05-databases/03-preparedStatements"
 	dataManipulation "go-advanced/05-databases/04-dataManipulation"
 	transactions "go-advanced/05-databases/05-transactions"
+	errorsNullsAndUnknownColumns "go-advanced/05-databases/06-errorsNullsAndUnknownColumns"
 )
 
 var Demos = struct {
@@ -15,6 +16,7 @@ var Demos = struct {
 	PreparedStatements        func()
 	DataManipulation          func()
 	Transactions              func()
+	HandlingErrors            func()
 }{
 	AccessingDatabases:        accessingDatabases.Demo,
 	SingleRowDataRetrieval:    dataRetrieval.SingleRowDemo,
@@ -22,4 +24,5 @@ var Demos = struct {
 	PreparedStatements:        preparedStatements.Demo,
 	DataManipulation:          dataManipulation.Demo,
 	Transactions:              transactions.Demo,
+	HandlingErrors:            errorsNullsAndUnknownColumns.DemoHandlingErrors,
 }

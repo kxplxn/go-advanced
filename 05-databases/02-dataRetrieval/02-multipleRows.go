@@ -5,7 +5,6 @@ import (
 	"fmt"
 	dbi "go-advanced/05-databases/00-shared"
 	"log"
-	"reflect"
 )
 
 func MultipleRowsDemo() {
@@ -22,7 +21,7 @@ func MultipleRowsDemo() {
 		log.Fatal(err)
 	}
 
-	es, err := getEmployees(db)
+	es, err := dbi.GetEmployees(db)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -31,25 +30,4 @@ func MultipleRowsDemo() {
 	}
 
 	fmt.Println("We have", len(es), "employees in our DB!")
-}
-
-func getEmployees(db *sql.DB) (es []dbi.Employee, err error) {
-	rs, err := db.Query("SELECT * FROM `employees`")
-	fmt.Println("type of rs:", reflect.TypeOf(rs))
-	if err != nil {
-		return es, err
-	}
-	defer rs.Close()
-
-	var e dbi.Employee
-	for rs.Next() {
-		err := rs.Scan(&e.Id, &e.Name, &e.City, &e.Dept)
-		if err != nil {
-			return es, err
-		}
-		es = append(es, e)
-	}
-
-	fmt.Println("type of es:", reflect.TypeOf(es))
-	return es, nil
 }
