@@ -5,6 +5,7 @@ import (
 	dataRetrieval "go-advanced/05-databases/02-dataRetrieval"
 	preparedStatements "go-advanced/05-databases/03-preparedStatements"
 	dataManipulation "go-advanced/05-databases/04-dataManipulation"
+	transactions "go-advanced/05-databases/05-transactions"
 )
 
 var Demos = struct {
@@ -13,10 +14,12 @@ var Demos = struct {
 	MultipleRowsDataRetrieval func()
 	PreparedStatements        func()
 	DataManipulation          func()
+	Transactions              func()
 }{
 	AccessingDatabases:        accessingDatabases.Demo,
 	SingleRowDataRetrieval:    dataRetrieval.SingleRowDemo,
 	MultipleRowsDataRetrieval: dataRetrieval.MultipleRowsDemo,
 	PreparedStatements:        preparedStatements.Demo,
 	DataManipulation:          dataManipulation.Demo,
+	Transactions:              transactions.Demo,
 }

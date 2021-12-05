@@ -8,13 +8,6 @@ import (
 	"reflect"
 )
 
-type Employee struct {
-	Id   int
-	Name string
-	City string
-	Dept string
-}
-
 func MultipleRowsDemo() {
 	fmt.Println("\n020502 Databases: Data Retrieval — 02 Multiple Rows")
 
@@ -40,7 +33,7 @@ func MultipleRowsDemo() {
 	fmt.Println("We have", len(es), "employees in our DB!")
 }
 
-func getEmployees(db *sql.DB) (es []Employee, err error) {
+func getEmployees(db *sql.DB) (es []dbi.Employee, err error) {
 	rs, err := db.Query("SELECT * FROM `employees`")
 	fmt.Println("type of rs:", reflect.TypeOf(rs))
 	if err != nil {
@@ -48,7 +41,7 @@ func getEmployees(db *sql.DB) (es []Employee, err error) {
 	}
 	defer rs.Close()
 
-	var e Employee
+	var e dbi.Employee
 	for rs.Next() {
 		err := rs.Scan(&e.Id, &e.Name, &e.City, &e.Dept)
 		if err != nil {

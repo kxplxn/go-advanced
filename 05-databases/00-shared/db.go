@@ -10,3 +10,10 @@ const (
 )
 
 var DSN = fmt.Sprintf("%s:%s@tcp(%s:3306)/%s", User, Password, Address, Dbname)
+
+type Employee struct {
+	Id   int
+	Name string
+	City string
+	Dept string
+}
