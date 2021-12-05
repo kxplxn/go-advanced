@@ -26,7 +26,7 @@ func SingleRowDemo() {
 	}
 
 	var name, city, dept string
-	id := 1001
+	id := 1061
 	err = db.QueryRow("SELECT `name`, `city`, `dept` FROM `employees` WHERE `id` = ?", id).Scan(&name, &city, &dept)
 	if err != nil {
 		log.Fatal(err)

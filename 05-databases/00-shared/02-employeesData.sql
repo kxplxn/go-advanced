@@ -1,6 +1,6 @@
 USE `company`;
 
-INSERT INTO `company`.`employees` (`name`, `city`, `dept`) VALUES ("joe", "fredericton", "sales");
+INSERT INTO `company`.`employees` (`name`, `city`, `dept`) VALUES (null, "fredericton", "sales");
 INSERT INTO `company`.`employees` (`name`, `city`, `dept`) VALUES ("jill", "boston", "development");
 INSERT INTO `company`.`employees` (`name`, `city`, `dept`) VALUES ("alex", "toronto", "development");
 INSERT INTO `company`.`employees` (`name`, `city`, `dept`) VALUES ("anna", "new york", "development");
