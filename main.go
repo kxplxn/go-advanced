@@ -48,4 +48,5 @@ func main() {
 	databases.Demos.DataManipulation()
 	databases.Demos.HandlingErrors()
 	databases.Demos.HandlingNulls()
+	databases.Demos.HandlingUnknownTypes()
 }

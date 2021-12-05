@@ -18,6 +18,7 @@ var Demos = struct {
 	Transactions              func()
 	HandlingErrors            func()
 	HandlingNulls             func()
+	HandlingUnknownTypes      func()
 }{
 	AccessingDatabases:        accessingDatabases.Demo,
 	SingleRowDataRetrieval:    dataRetrieval.SingleRowDemo,
@@ -27,4 +28,5 @@ var Demos = struct {
 	Transactions:              transactions.Demo,
 	HandlingErrors:            errorsNullsAndUnknownColumns.DemoHandlingErrors,
 	HandlingNulls:             errorsNullsAndUnknownColumns.DemoHandlingNulls,
+	HandlingUnknownTypes:      errorsNullsAndUnknownColumns.DemoHandlingUnknownTypes,
 }
