@@ -43,4 +43,5 @@ func main() {
 
 	databases.Demos.AccessingDatabases()
 	databases.Demos.SingleRowDataRetrieval()
+	databases.Demos.MultipleRowsDataRetrieval()
 }

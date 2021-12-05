@@ -6,9 +6,11 @@ import (
 )
 
 var Demos = struct {
-	AccessingDatabases     func()
-	SingleRowDataRetrieval func()
+	AccessingDatabases        func()
+	SingleRowDataRetrieval    func()
+	MultipleRowsDataRetrieval func()
 }{
-	AccessingDatabases:     accessingDatabases.Demo,
-	SingleRowDataRetrieval: dataRetrieval.SingleRowDemo,
+	AccessingDatabases:        accessingDatabases.Demo,
+	SingleRowDataRetrieval:    dataRetrieval.SingleRowDemo,
+	MultipleRowsDataRetrieval: dataRetrieval.MultipleRowsDemo,
 }
