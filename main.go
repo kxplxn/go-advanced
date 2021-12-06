@@ -6,6 +6,7 @@ import (
 	goroutines "go-advanced/03-goroutines"
 	channels "go-advanced/04-channels"
 	databases "go-advanced/05-databases"
+	testingAndDeploying "go-advanced/06-testingAndDeploying"
 )
 
 func main() {
@@ -14,4 +15,5 @@ func main() {
 	goroutines.Demos()
 	channels.Demos()
 	databases.Demos()
+	testingAndDeploying.Demos()
 }
