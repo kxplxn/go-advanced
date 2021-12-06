@@ -9,24 +9,14 @@ import (
 	errorsNullsAndUnknownColumns "go-advanced/05-databases/06-errorsNullsAndUnknownColumns"
 )
 
-var Demos = struct {
-	AccessingDatabases        func()
-	SingleRowDataRetrieval    func()
-	MultipleRowsDataRetrieval func()
-	PreparedStatements        func()
-	DataManipulation          func()
-	Transactions              func()
-	HandlingErrors            func()
-	HandlingNulls             func()
-	HandlingUnknownTypes      func()
-}{
-	AccessingDatabases:        accessingDatabases.Demo,
-	SingleRowDataRetrieval:    dataRetrieval.SingleRowDemo,
-	MultipleRowsDataRetrieval: dataRetrieval.MultipleRowsDemo,
-	PreparedStatements:        preparedStatements.Demo,
-	DataManipulation:          dataManipulation.Demo,
-	Transactions:              transactions.Demo,
-	HandlingErrors:            errorsNullsAndUnknownColumns.DemoHandlingErrors,
-	HandlingNulls:             errorsNullsAndUnknownColumns.DemoHandlingNulls,
-	HandlingUnknownTypes:      errorsNullsAndUnknownColumns.DemoHandlingUnknownTypes,
+func Demos() {
+	accessingDatabases.Demo()
+	dataRetrieval.SingleRowDemo()
+	dataRetrieval.MultipleRowsDemo()
+	preparedStatements.Demo()
+	dataManipulation.Demo()
+	transactions.Demo()
+	errorsNullsAndUnknownColumns.DemoHandlingErrors()
+	errorsNullsAndUnknownColumns.DemoHandlingNulls()
+	errorsNullsAndUnknownColumns.DemoHandlingUnknownTypes()
 }

@@ -15,30 +15,17 @@ import (
 	usingRaceDetector "go-advanced/03-goroutines/09-usingRaceDetector"
 )
 
-var Demos = struct {
-	Goroutines          func()
-	AnonymousFunctions  func()
-	AssigningFunctions  func()
-	ReturningFunctions  func()
-	Closures            func()
-	AnonymousGoroutines func()
-	WaitGroups          func()
-	AtomicOperations    func()
-	Mutexes             func()
-	RaceConditions      func()
-	PreventingDataRaces func()
-	UsingRaceDetector   func()
-}{
-	Goroutines:          goroutines.Demo,
-	AnonymousFunctions:  anonymousFunctions.Demo,
-	AssigningFunctions:  assigningFunctions.Demo,
-	ReturningFunctions:  returningFunctions.Demo,
-	Closures:            closures.Demo,
-	AnonymousGoroutines: goroutinesAsClosures.Demo,
-	WaitGroups:          waitGroups.Demo,
-	AtomicOperations:    atomicOperations.Demo,
-	Mutexes:             mutexes.Demo,
-	RaceConditions:      raceConditions.Demo,
-	PreventingDataRaces: preventingDataRaces.Demo,
-	UsingRaceDetector:   usingRaceDetector.Demo,
+func Demos() {
+	goroutines.Demo()
+	anonymousFunctions.Demo()
+	assigningFunctions.Demo()
+	returningFunctions.Demo()
+	closures.Demo()
+	goroutinesAsClosures.Demo()
+	waitGroups.Demo()
+	atomicOperations.Demo()
+	mutexes.Demo()
+	raceConditions.Demo()
+	preventingDataRaces.Demo()
+	usingRaceDetector.Demo()
 }

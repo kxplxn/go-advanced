@@ -3,8 +3,9 @@ package _020506_errorsNullsAndUnknownColumns_
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/go-sql-driver/mysql"
 	"log"
+
+	_ "github.com/go-sql-driver/mysql"
 
 	dbi "go-advanced/05-databases/00-shared"
 )
@@ -32,7 +33,7 @@ func DemoHandlingErrors() {
 			log.Fatal(err)
 		}
 	} else {
-		fmt.Print("name: %s, city: %s, dept: %s\n", name, city, dept)
+		fmt.Printf("name: %s, city: %s, dept: %s\n", name, city, dept)
 	}
 
 	rs, err := dbi.GetEmployees(db)

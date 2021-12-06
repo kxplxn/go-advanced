@@ -10,20 +10,12 @@ import (
 	modules "go-advanced/01-packagesDeepDive/07-modules"
 )
 
-var Demos = struct {
-	NestedPackages         func()
-	ConfiguringPackages    func()
-	ImportingPackages      func()
-	AlternateImportMethods func()
-	DocumentingPackages    func()
-	TheInitFunction        func()
-	Modules                func()
-}{
-	NestedPackages:         nestedPackages.Demo,
-	ConfiguringPackages:    configuringPackages.Demo,
-	ImportingPackages:      importingPackages.Demo,
-	AlternateImportMethods: alternateImportMethods.Demo,
-	DocumentingPackages:    documentingPackages.Demo,
-	TheInitFunction:        theInitFunction.Demo,
-	Modules:                modules.Demo,
+func Demos() {
+	nestedPackages.Demo()
+	configuringPackages.Demo()
+	importingPackages.Demo()
+	alternateImportMethods.Demo()
+	documentingPackages.Demo()
+	theInitFunction.Demo()
+	modules.Demo()
 }

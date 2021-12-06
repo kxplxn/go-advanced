@@ -11,22 +11,13 @@ import (
 	pipelines "go-advanced/04-channels/07-pipelines"
 )
 
-var Demos = struct {
-	GoroutinesAndChannels func()
-	UnbufferedChannels    func()
-	BufferedChannels      func()
-	RangeAndClose         func()
-	SelectStatement       func()
-	NonblockingSelect     func()
-	ChannelsAndWaitGroups func()
-	Pipelines             func()
-}{
-	GoroutinesAndChannels: usingChannels.Demo,
-	UnbufferedChannels:    unbufferedChannels.Demo,
-	BufferedChannels:      bufferedChannels.Demo,
-	RangeAndClose:         rangeAndClose.Demo,
-	SelectStatement:       selectStatement.Demo,
-	NonblockingSelect:     nonblockingSelect.Demo,
-	ChannelsAndWaitGroups: channelsAndWaitGroups.Demo,
-	Pipelines:             pipelines.Demo,
+func Demos() {
+	usingChannels.Demo()
+	unbufferedChannels.Demo()
+	bufferedChannels.Demo()
+	rangeAndClose.Demo()
+	selectStatement.Demo()
+	nonblockingSelect.Demo()
+	channelsAndWaitGroups.Demo()
+	pipelines.Demo()
 }
