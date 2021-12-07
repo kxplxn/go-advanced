@@ -7,6 +7,7 @@ import (
 	channels "go-advanced/04-channels"
 	databases "go-advanced/05-databases"
 	testingAndDeploying "go-advanced/06-testingAndDeploying"
+	bestPractices "go-advanced/07-bestPractices"
 )
 
 func main() {
@@ -16,4 +17,5 @@ func main() {
 	channels.Demos()
 	databases.Demos()
 	testingAndDeploying.Demos()
+	bestPractices.Demos()
 }
