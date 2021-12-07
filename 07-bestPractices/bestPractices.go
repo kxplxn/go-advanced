@@ -10,4 +10,5 @@ func Demos() {
 	documenting.Demo()
 	structuring.Demo()
 	errorHandling.DemoPanic()
+	errorHandling.DemoTypeSwitch()
 }
