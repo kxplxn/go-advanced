@@ -4,6 +4,7 @@ import (
 	documenting "go-advanced/07-bestPractices/01-documenting"
 	structuring "go-advanced/07-bestPractices/02-structuring"
 	errorHandling "go-advanced/07-bestPractices/03-errorHandling"
+	dataHandling "go-advanced/07-bestPractices/04-dataHandling"
 )
 
 func Demos() {
@@ -11,4 +12,5 @@ func Demos() {
 	structuring.Demo()
 	errorHandling.DemoPanic()
 	errorHandling.DemoTypeSwitch()
+	dataHandling.Demo()
 }
