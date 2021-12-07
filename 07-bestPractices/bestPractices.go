@@ -5,6 +5,7 @@ import (
 	structuring "go-advanced/07-bestPractices/02-structuring"
 	errorHandling "go-advanced/07-bestPractices/03-errorHandling"
 	dataHandling "go-advanced/07-bestPractices/04-dataHandling"
+	concurrency "go-advanced/07-bestPractices/05-concurrency"
 )
 
 func Demos() {
@@ -13,4 +14,5 @@ func Demos() {
 	errorHandling.DemoPanic()
 	errorHandling.DemoTypeSwitch()
 	dataHandling.Demo()
+	concurrency.Demo()
 }
