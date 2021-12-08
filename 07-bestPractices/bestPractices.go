@@ -6,6 +6,7 @@ import (
 	errorHandling "go-advanced/07-bestPractices/03-errorHandling"
 	dataHandling "go-advanced/07-bestPractices/04-dataHandling"
 	concurrency "go-advanced/07-bestPractices/05-concurrency"
+	testing "go-advanced/07-bestPractices/06-testing"
 )
 
 func Demos() {
@@ -15,4 +16,5 @@ func Demos() {
 	errorHandling.DemoTypeSwitch()
 	dataHandling.Demo()
 	concurrency.Demo()
+	testing.Demo()
 }
